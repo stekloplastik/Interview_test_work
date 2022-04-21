@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promo Generator</title>
+</head>
+<body>
+    <div class="text-center">
+        <form class="form-control" method="post">{% csrf_token %}
+            <label class="text-primary">Группа
+                {{ form.group }}
+            </label>
+            <label class="text-primary">Количество "Промо-кодов"
+                {{ form.count }}
+            </label>
+            <button type="submit" class="btn btn-primary mr-2 waves-effect waves-light">Сгенерировать</button>
+        </form>
+    </div>
+</body>
+</html>
